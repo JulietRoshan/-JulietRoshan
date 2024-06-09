@@ -1,0 +1,13 @@
+n=int(input())
+s=input().split()
+k=[int(x) for x in s]
+sum=int(input())
+c=1
+for i in k:
+    for j in k:
+        if i+j==sum and c!=0 and len(k)==n:
+            print("Yes")
+            c=0
+           
+if c==1:
+    print("No")
