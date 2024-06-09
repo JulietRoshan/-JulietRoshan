@@ -1,0 +1,17 @@
+num=int(input())
+n=num
+count=0
+while n!=0:
+    count=count+1
+    n=n//10
+n=num
+res=0
+while n!=0:
+    rem-n%10
+    res-res+rem**count
+    count=count-1
+    n=n//10
+if res==num:
+    print("Yes")
+else:
+    print("No")
