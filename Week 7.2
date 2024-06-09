@@ -1,0 +1,13 @@
+def find(s):
+    freq = {}
+    result = set()
+    for i in range(len(s)):
+        sub = s[i:i +10]
+        freq[sub] = freq.get(sub, 0) + 1
+        if freq[sub] >1:
+            result.add(sub)
+    return list(result)
+str1 = input()
+output1=find(str1)
+for i in output1:
+    print(i)
