@@ -1,0 +1,16 @@
+n=int(input())
+k=[]
+list=[int(x) for x in input().split()]
+for i in range(len(list)):
+    if i==0:
+        if list[i]>=list[i+1]:
+            k.append(list[i])
+    elif i==n-1:    
+        if list [i-1]<=list[i]:
+            k.append(list[i])
+            
+    else:
+        if list[i-1]<=list[i]>=list [i+1]:
+            k.append(list[i])
+for i in k:
+    print(i,end=' ')
