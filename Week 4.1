@@ -1,0 +1,8 @@
+a=int(input())
+while a<=1000:
+    b = a ^ 0.5
+    b=round(b)
+    if b*b==a:
+        print(a)
+        break
+    a = a + 1
